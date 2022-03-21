@@ -1,4 +1,5 @@
 source("data.R")
+# Some new code .... 
 
 # Transactions distribution by day of week----
 transactions %>% mutate(

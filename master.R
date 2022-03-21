@@ -1,4 +1,10 @@
 source("data.R")
+
+some_new_function <- function(){
+  print("hello")
+}
+
+
 # Some new code .... 
 # Client Fallout Rate by Program-----
 # clients$Charted <- is.na(clients$)

@@ -1,5 +1,24 @@
 source("data.R")
 # Some new code .... 
+# Client Fallout Rate by Program-----
+# clients$Charted <- is.na(clients$)
+# clients %>% 
+#   group_by(Referral) %>% 
+#   #filter() %>% # Changed from FirstChartingDate
+#   summarise(
+#     Clients = n(),
+#     Utilization = sum(Charted),
+#     Fallout = n() - sum(Charted)
+#   )# %>% write.csv("output//client fallout by program.csv")
+# 
+# sum(is.na(clients$FirstChartingDate))
+
+# Clinicians at FreedomWorks-------
+colnames(transactions)
+transactions %>% group_by(Referral, Clinician) %>% filter(Referral == "Freedom Works") %>% count()
+
+
+# Some new code .... 
 
 # Transactions distribution by day of week----
 transactions %>% mutate(

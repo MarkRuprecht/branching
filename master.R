@@ -1,4 +1,5 @@
 source("data.R")
+
 # Client Fallout Rate by Program-----
 # clients$Charted <- is.na(clients$)
 # clients %>% 
@@ -17,7 +18,7 @@ colnames(transactions)
 transactions %>% group_by(Referral, Clinician) %>% filter(Referral == "Freedom Works") %>% count()
 
 
-
+# Some new code .... 
 
 
 # Transactions distribution by day of week----
